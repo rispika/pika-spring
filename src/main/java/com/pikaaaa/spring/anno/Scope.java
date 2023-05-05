@@ -9,8 +9,7 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
-public @interface Service {
+public @interface Scope {
 
-    String value() default "";
-
+    ScopeEnum value() default ScopeEnum.SINGLETON; ;
 }

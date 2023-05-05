@@ -13,6 +13,4 @@ public @interface Component {
 
     String value() default ""; // bean名称
 
-    ScopeEnum scope() default ScopeEnum.SINGLETON; // 模式
-
 }
